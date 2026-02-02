@@ -127,7 +127,122 @@
 
 <button type="button" class="submit" onclick="gradeQuiz()">Submit Exam</button>
 
+
+<!-- QUESTIONS 11–20 -->
+
+<div class="question">
+  <p>11. Which action signals trainer coaching drift?</p>
+  <div class="options">
+    <label><input type="radio" name="q11" value="1"> Explaining why an option "sounds correct"</label>
+    <label><input type="radio" name="q11" value="0"> Stopping learners at 5 seconds</label>
+    <label><input type="radio" name="q11" value="0"> Using unsafe labels</label>
+    <label><input type="radio" name="q11" value="0"> Enforcing binary choice</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>12. A learner asks for word meaning clarification during drill. Trainer should:</p>
+  <div class="options">
+    <label><input type="radio" name="q12" value="1"> Redirect to action and continue drill</label>
+    <label><input type="radio" name="q12" value="0"> Explain vocabulary</label>
+    <label><input type="radio" name="q12" value="0"> Pause session</label>
+    <label><input type="radio" name="q12" value="0"> Allow discussion</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>13. Which metric is MOST reliable for readiness?</p>
+  <div class="options">
+    <label><input type="radio" name="q13" value="1"> Zero critical unsafe errors</label>
+    <label><input type="radio" name="q13" value="0"> High average score</label>
+    <label><input type="radio" name="q13" value="0"> English fluency</label>
+    <label><input type="radio" name="q13" value="0"> Confidence level</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>14. A trainer allows "reassess later" as acceptable first step. Error type?</p>
+  <div class="options">
+    <label><input type="radio" name="q14" value="1"> Delay error</label>
+    <label><input type="radio" name="q14" value="0"> Scope error</label>
+    <label><input type="radio" name="q14" value="0"> ESL error</label>
+    <label><input type="radio" name="q14" value="0"> Complexity error</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>15. Which explanation is acceptable?</p>
+  <div class="options">
+    <label><input type="radio" name="q15" value="1"> This waits when action is allowed</label>
+    <label><input type="radio" name="q15" value="0"> This is grammatically stronger</label>
+    <label><input type="radio" name="q15" value="0"> This shows deeper thinking</label>
+    <label><input type="radio" name="q15" value="0"> This is what hospitals do</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>16. Response time suddenly increases while scores rise. Correct interpretation?</p>
+  <div class="options">
+    <label><input type="radio" name="q16" value="1"> Inflation risk detected</label>
+    <label><input type="radio" name="q16" value="0"> Learners improving</label>
+    <label><input type="radio" name="q16" value="0"> ESL mastery</label>
+    <label><input type="radio" name="q16" value="0"> Advanced reasoning</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>17. Which learner behavior requires immediate stop?</p>
+  <div class="options">
+    <label><input type="radio" name="q17" value="1"> Justifying answer with sentence structure</label>
+    <label><input type="radio" name="q17" value="0"> Fast incorrect answer</label>
+    <label><input type="radio" name="q17" value="0"> Asking to repeat question</label>
+    <label><input type="radio" name="q17" value="0"> Silent hesitation</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>18. Which remediation matches repeated scope errors?</p>
+  <div class="options">
+    <label><input type="radio" name="q18" value="1"> Scope-of-practice drills</label>
+    <label><input type="radio" name="q18" value="0"> English worksheets</label>
+    <label><input type="radio" name="q18" value="0"> Extra theory lectures</label>
+    <label><input type="radio" name="q18" value="0"> Case reflections</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>19. What should NEVER influence release decisions?</p>
+  <div class="options">
+    <label><input type="radio" name="q19" value="1"> Trainer confidence</label>
+    <label><input type="radio" name="q19" value="0"> Unsafe rate</label>
+    <label><input type="radio" name="q19" value="0"> Response time</label>
+    <label><input type="radio" name="q19" value="0"> Critical errors</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>20. The trainer's PRIMARY accountability is to:</p>
+  <div class="options">
+    <label><input type="radio" name="q20" value="1"> Exam validity and patient safety</label>
+    <label><input type="radio" name="q20" value="0"> Learner satisfaction</label>
+    <label><input type="radio" name="q20" value="0"> Institutional marketing</label>
+    <label><input type="radio" name="q20" value="0"> Pass rate maximization</label>
+  </div>
+</div>
+
 </form>
+
+<h2>Study Rationale – How to Think (Not Memorize)</h2>
+<p><strong>Use this section for trainer self-study. Do NOT share with learners.</strong></p>
+<ul>
+  <li><strong>Delay Errors:</strong> Any option that waits, reassesses, documents, or monitors before safety action is unsafe.</li>
+  <li><strong>Scope Errors:</strong> If a nurse can act without an order, waiting for MD is unsafe.</li>
+  <li><strong>ESL Traps:</strong> Grammatically impressive or complex wording is often wrong.</li>
+  <li><strong>Trainer Drift:</strong> High scores + slow time = coaching, not readiness.</li>
+  <li><strong>Rationale Rule:</strong> One sentence. Action-focused. No language analysis.</li>
+  <li><strong>Release Rule:</strong> Dashboard logic overrides trainer opinion.</li>
+</ul>
+
 
 <div id="result" class="result"></div>
 
@@ -136,7 +251,7 @@
 <script>
 function gradeQuiz() {
   let score = 0;
-  let total = 10;
+  let total = 20;
   const form = document.getElementById('quiz');
 
   for (let i = 1; i <= total; i++) {
